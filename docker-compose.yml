@@ -1,0 +1,13 @@
+version: "3.7"
+volumes:
+  node_modules:
+services:
+  api:
+    image: node:12
+    command: npm run dev
+    working_dir: /usr/app/
+    volumes:
+      - ./api:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - 3000:3000
