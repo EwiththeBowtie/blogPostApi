@@ -4,10 +4,10 @@ volumes:
 services:
   api:
     image: node:12
-    command: npm run dev
+    command: npm run start
     working_dir: /usr/app/
     volumes:
       - ./api:/usr/app/
-      - /usr/app/node_modules
+      - node_modules:/usr/app/node_modules
     ports:
       - 3000:3000
