@@ -27,6 +27,7 @@ docker-compose up
 The server should be running at http://localhost:3000/posts
 
 ### Run tests locally
+
 ```bash
 docker-compose run api npm test
 ```
