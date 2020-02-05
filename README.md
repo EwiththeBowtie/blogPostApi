@@ -12,4 +12,21 @@ A simple api for creating blog posts and listing blog previously created blog po
 
 ### Install Node Modules
 
-`bash docker-compose run api npm install`
+With `blogPostApi/` as your current directory run:
+
+```bash
+docker-compose run api npm install
+```
+
+### Run locally
+
+```bash
+docker-compose up
+```
+
+The server should be running at http://localhost:3000/posts
+
+### Run tests locally
+```bash
+docker-compose run api npm test
+```
