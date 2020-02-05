@@ -31,5 +31,4 @@ app.post("/post", ({ body = {} }, res) => {
   }
 });
 
-app.listen(3000);
-console.log("Listening on port 3000...");
+module.export = app;

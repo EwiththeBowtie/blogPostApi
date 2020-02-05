@@ -4,7 +4,7 @@
   "description": "Simple Blog Post Api using sqlite.",
   "main": "index.js",
   "scripts": {
-    "start": "node ./app/index.js",
+    "start": "node ./app/start.js",
     "test": "jest"
   },
   "author": "E Einowski",
