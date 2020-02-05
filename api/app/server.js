@@ -31,4 +31,4 @@ app.post("/post", ({ body = {} }, res) => {
   }
 });
 
-module.export = app;
+module.exports = app;
