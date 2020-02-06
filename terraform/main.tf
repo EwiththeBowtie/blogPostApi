@@ -69,3 +69,30 @@ resource "aws_codebuild_project" "project" {
   }
 
 }
+
+variable "github_access_token" {
+  type        = "string"
+  description = "The access token codebuild uses for webhooks and git clone"
+}
+
+resource "aws_codebuild_source_credential" "blogPostApi" {
+  auth_type   = "PERSONAL_ACCESS_TOKEN"
+  server_type = "GITHUB"
+  token       = var.github_access_token
+}
+
+resource "aws_codebuild_webhook" "blogPostApi" {
+  project_name = "${aws_codebuild_project.blogPostApi.name}"
+
+  filter_group {
+    filter {
+      type    = "EVENT"
+      pattern = "PUSH"
+    }
+
+    filter {
+      type    = "HEAD_REF"
+      pattern = "master"
+    }
+  }
+}
