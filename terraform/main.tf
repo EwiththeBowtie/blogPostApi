@@ -82,7 +82,7 @@ resource "aws_codebuild_source_credential" "blogPostApi" {
 }
 
 resource "aws_codebuild_webhook" "blogPostApi" {
-  project_name = "${aws_codebuild_project.project.name}"
+  project_name = aws_codebuild_project.project.name
 
   filter_group {
     filter {
