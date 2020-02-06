@@ -47,12 +47,12 @@ Inside the `api` folder you'll find a `buildspec.yml` file.
 
 It defines the following pipeline:
 
-Build Dockerfile 
+    Build Dockerfile 
 
-  -> Tag the image with the last 7 characters of the commit hash 
+    -> Tag the image with the last 7 characters of the commit hash 
 
     -> Tag the image as "latest" 
   
-      -> Run the test script on the image 
+    -> Run the test script on the image 
         
-        -> If all tests pass, push the image to the AWS Elastic Container Repository (ECR) 
+    -> If all tests pass, push the image to the AWS Elastic Container Repository (ECR) 
