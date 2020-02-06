@@ -38,6 +38,7 @@ docker-compose run api npm test
 
 Inside the `terraform` folder you'll find several .tf files. These files define the CI Pipeline for the api.
 
+![Terraform Cloud] (/TerraformCloud.pgn?raw=true)
 #### Updating the build pipeline
 
 When a commit on a file in the terraform folder of the master branch is pushed Terraform Cloud will trigger a plan and (if successful) apply the infrastructure changes defined in the .tf files.
@@ -56,3 +57,6 @@ It defines the following pipeline:
     -> Run the test script on the image 
         
     -> If all tests pass, push the image to the AWS Elastic Container Repository (ECR) 
+
+### Deploying the latest revision
+
