@@ -1,5 +1,4 @@
-![Codebuild Build Badge]
-(https://codebuild.us-west-2.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiMG1UajdLL0JIVUNiMkZNOUNkZU15UDJURFNqRjczcW1EcFQ1clJDbjIwUTdheGY1dTJ1NjdTOEVObzF0eWN0eTFTNFc0aWtpZ2RyUkFwKzZRT3ZpSVdNPSIsIml2UGFyYW1ldGVyU3BlYyI6IjhEZGM2MXhaSjVXbEFKdDQiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)
+![Codebuild Build Badge](https://codebuild.us-west-2.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiMG1UajdLL0JIVUNiMkZNOUNkZU15UDJURFNqRjczcW1EcFQ1clJDbjIwUTdheGY1dTJ1NjdTOEVObzF0eWN0eTFTNFc0aWtpZ2RyUkFwKzZRT3ZpSVdNPSIsIml2UGFyYW1ldGVyU3BlYyI6IjhEZGM2MXhaSjVXbEFKdDQiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)
 # Blog Post Api
 
 ## Description
