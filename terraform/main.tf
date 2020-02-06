@@ -107,7 +107,7 @@ resource "aws_codebuild_webhook" "blogPostApi" {
 }
 
 resource "aws_ecr_repository" "blogPostApi" {
-  name                 = "blogPostApi"
+  name                 = "blog-post-api"
   image_tag_mutability = "IMMUTABLE"
 
   image_scanning_configuration {
