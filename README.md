@@ -38,7 +38,7 @@ docker-compose run api npm test
 
 Inside the `terraform` folder you'll find several .tf files. These files define the CI Pipeline for the api.
 
-![Terraform Cloud] (TerraformCloud.png?raw=true)
+![Terraform Cloud](TerraformCloud.png?raw=true)
 #### Updating the build pipeline
 
 When a commit on a file in the terraform folder of the master branch is pushed Terraform Cloud will trigger a plan and (if successful) apply the infrastructure changes defined in the .tf files.
