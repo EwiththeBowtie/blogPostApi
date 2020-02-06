@@ -71,7 +71,7 @@ resource "aws_codebuild_project" "project" {
 }
 
 variable "github_access_token" {
-  type        = "string"
+  type        = string
   description = "The access token codebuild uses for webhooks and git clone"
 }
 
