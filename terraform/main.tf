@@ -68,6 +68,9 @@ resource "aws_codebuild_project" "project" {
     git_clone_depth = 1
   }
 
+resource "aws_iam_role_policy_attachment" "codebuild" {
+  role       = aws_iam_role.codebuild.name
+  policy_arn = "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryPowerUser"
 }
 
 variable "github_access_token" {
