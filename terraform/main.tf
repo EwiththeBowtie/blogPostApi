@@ -67,6 +67,7 @@ resource "aws_codebuild_project" "project" {
     location        = "https://github.com/EwiththeBowtie/blogPostApi.git"
     git_clone_depth = 1
   }
+}
 
 resource "aws_iam_role_policy_attachment" "codebuild" {
   role       = aws_iam_role.codebuild.name
