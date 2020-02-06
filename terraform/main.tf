@@ -74,6 +74,11 @@ resource "aws_iam_role_policy_attachment" "codebuild" {
   policy_arn = "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryPowerUser"
 }
 
+resource "aws_iam_role_policy_attachment" "codebuild_logs" {
+  role       = aws_iam_role.codebuild.name
+  policy_arn = "arn:aws:iam::021204337871:policy/CodeBuildCloudWatchLogs"
+}
+
 variable "github_access_token" {
   type        = string
   description = "The access token codebuild uses for webhooks and git clone"
