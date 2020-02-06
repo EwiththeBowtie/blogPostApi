@@ -73,7 +73,7 @@ resource "aws_codebuild_project" "project" {
 
 resource "aws_iam_role_policy_attachment" "codebuild" {
   role       = aws_iam_role.codebuild.name
-	policy_arn = "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryFullAccess"
+  policy_arn = "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryFullAccess"
 }
 
 resource "aws_iam_role_policy_attachment" "codebuild_logs" {
@@ -110,7 +110,7 @@ resource "aws_codebuild_webhook" "blogPostApi" {
 
 resource "aws_ecr_repository" "blogPostApi" {
   name                 = "blog-post-api"
-  image_tag_mutability = "IMMUTABLE"
+  image_tag_mutability = "MUTABLE"
 
   image_scanning_configuration {
     scan_on_push = true
