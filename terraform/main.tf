@@ -55,7 +55,7 @@ resource "aws_codebuild_project" "project" {
     image                       = "aws/codebuild/amazonlinux2-x86_64-standard:2.0"
     type                        = "LINUX_CONTAINER"
     image_pull_credentials_type = "CODEBUILD"
-    privileged_mode: true
+    privileged_mode             = true
 
     environment_variable {
       name  = "SOME_KEY1"
