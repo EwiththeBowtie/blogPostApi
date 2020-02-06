@@ -2,7 +2,6 @@ FROM node:12
 WORKDIR /usr/src/app
 COPY package*.json ./
 RUN npm install
-COPY ./app ./app
-COPY ./db  ./db
+COPY . .
 EXPOSE 3000
-CMD [ "node", "./api/start.js" ]
+CMD [ "node", "./app/start.js" ]
