@@ -105,3 +105,12 @@ resource "aws_codebuild_webhook" "blogPostApi" {
     }
   }
 }
+
+resource "aws_ecr_repository" "blogPostApi" {
+  name                 = "blogPostApi"
+  image_tag_mutability = "IMMUTABLE"
+
+  image_scanning_configuration {
+    scan_on_push = true
+  }
+}
