@@ -66,6 +66,7 @@ resource "aws_codebuild_project" "project" {
     type            = "GITHUB"
     location        = "https://github.com/EwiththeBowtie/blogPostApi.git"
     git_clone_depth = 1
+		buildspec = "./api/buildspec.yml"
   }
 }
 
